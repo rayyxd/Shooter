@@ -1,4 +1,4 @@
-class main{
+class Main{
     public static void main(String args[])
     {
         Equipment ak47 = new AK47();
@@ -12,7 +12,7 @@ class main{
 
         glock.display();
         glock.performAttack1();
-        glock.attack1Behavior=new ShootingBurst();
+        glock.attack1Behavior=new BShootingBurst();
         glock.performAttack1();
 
 

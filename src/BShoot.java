@@ -1,4 +1,4 @@
-public class Shoot implements AttackBehavior {
+public class BShoot implements AttackBehavior {
     @Override
     public void attack(){
         System.out.println("Bang!");

@@ -1,7 +1,7 @@
 public class Glock extends Equipment{
 
     public Glock(){
-        super(new Shoot(), new ShootingBurst());
+        super(new BShoot(), new BShootingBurst());
     }
 
     @Override

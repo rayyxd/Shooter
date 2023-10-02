@@ -1,7 +1,7 @@
 public class AK47 extends Equipment {
 
     public AK47() {
-        super(new Shoot(), new NoAttack());
+        super(new BShoot(), new BNoAttack());
     }
 
     @Override

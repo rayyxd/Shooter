@@ -1,6 +1,6 @@
 public class Deagle extends Equipment {
     public Deagle() {
-        super(new Shoot(), new NoAttack());
+        super(new BShoot(), new BNoAttack());
     }
 
     @Override

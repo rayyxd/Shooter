@@ -1,6 +1,6 @@
 public class Knife extends Equipment {
     public Knife(){
-        super(new Cut(), new Cut());
+        super(new BCut(), new BCut());
     }
     @Override
     void display(){

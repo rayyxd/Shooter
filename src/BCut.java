@@ -1,4 +1,4 @@
-public class Cut implements AttackBehavior{
+public class BCut implements AttackBehavior{
     @Override
     public void attack(){
         System.out.println("Cutting with knife");

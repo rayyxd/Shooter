@@ -1,7 +1,7 @@
 public class DefusingKits extends Equipment{
 
     public DefusingKits(){
-        super(new Defusing(), new NoAttack());
+        super(new BDefusing(), new BNoAttack());
     }
     void display(){
         System.out.println("It is defusing kits");

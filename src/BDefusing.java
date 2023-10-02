@@ -1,4 +1,4 @@
-public class Defusing implements AttackBehavior{
+public class BDefusing implements AttackBehavior{
     @Override
     public void attack(){
         System.out.println("I am defusing");
