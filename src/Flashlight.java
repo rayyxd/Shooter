@@ -9,4 +9,12 @@ public class Flashlight extends EquipmentDecorator{
     public double cost(){
         return 300 + equipment.cost();
     }
+
+    public void performAttack1(){
+        equipment.performAttack1();
+    }
+
+    public void performAttack2(){
+        equipment.performAttack2();
+    }
 }

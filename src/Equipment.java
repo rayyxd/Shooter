@@ -9,6 +9,14 @@ public abstract class Equipment {
         this.attack2Behavior = attack2Behavior;
     }
 
+    public AttackBehavior getAttack1Behavior() {
+        return attack1Behavior;
+    }
+
+    public AttackBehavior getAttack2Behavior() {
+        return attack2Behavior;
+    }
+
     void performAttack1(){
         attack1Behavior.attack();
     }

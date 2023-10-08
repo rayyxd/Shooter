@@ -8,6 +8,9 @@ class Main{
         ak47 = new Flashlight(ak47);
         ak47.display();
 
+        ak47.performAttack1();
+        ak47.performAttack2();
+
         Equipment glock = new Glock();
         glock.SetAttackBehavior(new BShoot(), new BShootingBurst());
         glock = new Silencer(glock);
