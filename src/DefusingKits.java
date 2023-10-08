@@ -1,9 +1,11 @@
 public class DefusingKits extends Equipment{
 
     public DefusingKits(){
-        super(new BDefusing(), new BNoAttack());
+        description="Defusing kits";
     }
-    void display(){
-        System.out.println("It is defusing kits");
+
+    @Override
+    public double cost() {
+        return 400;
     }
 }

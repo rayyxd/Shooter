@@ -1,11 +1,11 @@
 public class AK47 extends Equipment {
 
     public AK47() {
-        super(new BShoot(), new BNoAttack());
+        description="AK-47";
+    }
+    @Override
+    public double cost(){
+        return 2700;
     }
 
-    @Override
-    void display(){
-        System.out.println("It is ak47");
-    }
 }

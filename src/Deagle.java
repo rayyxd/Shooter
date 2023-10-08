@@ -1,10 +1,10 @@
 public class Deagle extends Equipment {
     public Deagle() {
-        super(new BShoot(), new BNoAttack());
+        description="Deagle";
     }
 
     @Override
-    void display(){
-        System.out.println("It is desert eagle");
+    public double cost() {
+        return 700;
     }
 }

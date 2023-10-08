@@ -1,11 +1,11 @@
 public class Glock extends Equipment{
 
     public Glock(){
-        super(new BShoot(), new BShootingBurst());
+        description="Glock";
     }
 
     @Override
-    void display(){
-        System.out.println("It is glock");
+    public double cost() {
+        return 200;
     }
 }

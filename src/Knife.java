@@ -1,9 +1,10 @@
 public class Knife extends Equipment {
     public Knife(){
-        super(new BCut(), new BCut());
+        description="Knife";
     }
+
     @Override
-    void display(){
-        System.out.println("It is a knife");
+    public double cost() {
+        return 100;
     }
 }
