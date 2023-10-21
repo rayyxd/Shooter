@@ -1,15 +1,18 @@
-public class Flashlight extends EquipmentDecorator{
+package Decorators;
+
+import Equipments.Equipment;
+
+public class Silencer extends EquipmentDecorator{
     Equipment equipment;
-    public Flashlight(Equipment equipment){
+    public Silencer(Equipment equipment){
         this.equipment=equipment;
     }
     public String getDescription(){
-        return equipment.getDescription()+" + Flashlight";
+        return equipment.getDescription()+" + Silencer";
     }
     public double cost(){
-        return 300 + equipment.cost();
+        return 1200 + equipment.cost();
     }
-
     public void performAttack1(){
         equipment.performAttack1();
     }
@@ -18,3 +21,4 @@ public class Flashlight extends EquipmentDecorator{
         equipment.performAttack2();
     }
 }
+

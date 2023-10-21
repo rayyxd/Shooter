@@ -1,3 +1,6 @@
+import Behaviors.*;
+import Decorators.*;
+import Equipments.*;
 class Main{
     public static void main(String[] args)
     {
@@ -8,6 +11,10 @@ class Main{
         ak47 = new Flashlight(ak47);
         ak47.display();
 
+
+
+
+
         ak47.performAttack1();
         ak47.performAttack2();
 
@@ -16,6 +23,8 @@ class Main{
         glock = new Silencer(glock);
         glock = new Flashlight(glock);
         glock.display();
+
+
 
 
 

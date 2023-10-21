@@ -1,3 +1,5 @@
+package Behaviors;
+
 public class BNoAttack implements AttackBehavior {
     @Override
     public void attack(){

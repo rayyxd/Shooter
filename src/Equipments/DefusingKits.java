@@ -1,4 +1,6 @@
-public class DefusingKits extends Equipment{
+package Equipments;
+
+public class DefusingKits extends Equipment {
 
     public DefusingKits(){
         description="Defusing kits";

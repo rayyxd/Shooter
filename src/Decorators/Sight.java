@@ -1,3 +1,7 @@
+package Decorators;
+
+import Equipments.Equipment;
+
 public class Sight extends EquipmentDecorator{
     Equipment equipment;
     public Sight(Equipment equipment){

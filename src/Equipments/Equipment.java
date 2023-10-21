@@ -1,27 +1,28 @@
+package Equipments;
+
+import Behaviors.*;
+
 public abstract class Equipment {
 
-    AttackBehavior attack1Behavior;
-    AttackBehavior attack2Behavior;
+    private AttackBehavior attack1Behavior;
+    private AttackBehavior attack2Behavior;
 
-    String description ="Unknown equipment";
+    protected String description ="Unknown equipment";
+
     public void SetAttackBehavior(AttackBehavior attack1Behavior, AttackBehavior attack2Behavior) {
         this.attack1Behavior = attack1Behavior;
         this.attack2Behavior = attack2Behavior;
     }
-
-    public AttackBehavior getAttack1Behavior() {
-        return attack1Behavior;
-    }
-
+    public AttackBehavior getAttack1Behavior() {return attack1Behavior;}
     public AttackBehavior getAttack2Behavior() {
         return attack2Behavior;
     }
 
-    void performAttack1(){
+    public void performAttack1(){
         attack1Behavior.attack();
     }
 
-    void performAttack2(){
+    public void performAttack2(){
         attack2Behavior.attack();
     }
     public String getDescription(){
@@ -30,7 +31,7 @@ public abstract class Equipment {
 
     public abstract double cost();
 
-    void display(){
+    public void display(){
         System.out.println(getDescription()+" $"+cost());
     }
 }

@@ -1,3 +1,5 @@
+package Equipments;
+
 public class Knife extends Equipment {
     public Knife(){
         description="Knife";

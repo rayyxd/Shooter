@@ -1,3 +1,5 @@
+package Equipments;
+
 public class AK47 extends Equipment {
 
     public AK47() {

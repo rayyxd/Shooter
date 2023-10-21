@@ -1,3 +1,5 @@
+package Equipments;
+
 public class Deagle extends Equipment {
     public Deagle() {
         description="Deagle";

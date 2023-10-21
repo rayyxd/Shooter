@@ -1,4 +1,6 @@
-public class BCut implements AttackBehavior{
+package Behaviors;
+
+public class BCut implements AttackBehavior {
     @Override
     public void attack(){
         System.out.println("Cutting with knife");

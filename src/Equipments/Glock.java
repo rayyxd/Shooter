@@ -1,4 +1,6 @@
-public class Glock extends Equipment{
+package Equipments;
+
+public class Glock extends Equipment {
 
     public Glock(){
         description="Glock";
