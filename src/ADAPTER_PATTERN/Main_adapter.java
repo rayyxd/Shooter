@@ -5,9 +5,7 @@ public class Main_adapter {
         USB usb_socket = new USB();
         Notebook nbook = new Notebook();
 
-        USBC_Socket usbc_socket = new SocketAdapter(usb_socket);
-
-        nbook.getConnect(usbc_socket);
+        nbook.getConnect(new SocketAdapter(usb_socket));
 
     }
 }
