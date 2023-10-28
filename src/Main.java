@@ -1,29 +1,44 @@
+import Characters.Character;
+import Equipments.*;
+import Grenades.*;
+import UpdateCenter.*;
 import Behaviors.*;
 import Decorators.*;
-import Equipments.*;
-import Grenades.Flashbang;
-import Grenades.IGrenade;
 
 class Main{
     public static void main(String[] args)
     {
-        Equipment ak47 = new AK47();
-        ak47.SetAttackBehavior(new BShoot(), new BNoAttack());
-        ak47 = new Compensator(ak47);
-        ak47 = new Sight(ak47);
-        ak47 = new Flashlight(ak47);
+        /*Observer pattern*/
+        UpdateLog updates = new UpdateLog();
 
-        Equipment glock = new Glock();
-        glock.SetAttackBehavior(new BShoot(), new BShootingBurst());
-        glock = new Silencer(glock);
-        glock = new Flashlight(glock);
+        Character char1 = new Character("Agent 1", updates);
+        Character char2 = new Character("Agent 2", updates);
 
+        updates.setUpdateVer("1.0");
+        updates.addSubscriber(char1);
+        updates.addSubscriber(char2);
+        updates.notifySubs();
+        updates.setUpdateVer("1.1");
+
+
+        /*Adapter pattern*/
         IGrenade flashbang = new Flashbang();
+        Equipment ak47 = new AK47();
+        ak47.setAttackBehavior(new BShoot(), new BNoAttack());
 
-        Character char1 = new Character("Agent 1");
+        char1.setEquipment1(new EquipmentAdapter(flashbang));
+        char1.setEquipment2(ak47);
+        char1.changeEquipment(1);
+
+        char1.performAttack1();
+        char1.performAttack2();
+
+        char1.changeEquipment(2);
+        char1.performAttack1();
+        char1.performAttack2();
 
 
-        char1.setEquipment2(new EquipmentAdapter(flashbang));
+
 
 
 

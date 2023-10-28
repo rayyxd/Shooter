@@ -9,7 +9,7 @@ public abstract class Equipment {
 
     protected String description ="Unknown equipment";
 
-    public void SetAttackBehavior(AttackBehavior attack1Behavior, AttackBehavior attack2Behavior) {
+    public void setAttackBehavior(AttackBehavior attack1Behavior, AttackBehavior attack2Behavior) {
         this.attack1Behavior = attack1Behavior;
         this.attack2Behavior = attack2Behavior;
     }

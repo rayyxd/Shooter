@@ -1,3 +1,5 @@
+package Grenades;
+
 import Equipments.Equipment;
 import Grenades.IGrenade;
 
