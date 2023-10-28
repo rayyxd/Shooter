@@ -24,6 +24,7 @@ class Main{
         /*Adapter pattern*/
         IGrenade flashbang = new Flashbang();
         Equipment ak47 = new AK47();
+        ak47=new Sight(ak47);
         ak47.setAttackBehavior(new BShoot(), new BNoAttack());
 
         char1.setEquipment1(new EquipmentAdapter(flashbang));

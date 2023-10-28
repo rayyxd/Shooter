@@ -1,7 +1,6 @@
 package Grenades;
 
 import Equipments.Equipment;
-import Grenades.IGrenade;
 
 public class EquipmentAdapter extends Equipment {
 
