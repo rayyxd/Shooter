@@ -15,5 +15,8 @@ public class Character {
     public void setEquipment2(Equipment equip2){
         this.equip2=equip2;
     }
+    public void display(){
+        System.out.println("I am "+name);
+    }
 }
 

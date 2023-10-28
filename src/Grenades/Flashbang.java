@@ -1,7 +1,5 @@
 package Grenades;
 
-import Grenades.IGrenade;
-
 public class Flashbang implements IGrenade {
     private final String description;
     @Override
