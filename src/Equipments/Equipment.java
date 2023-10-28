@@ -13,10 +13,6 @@ public abstract class Equipment {
         this.attack1Behavior = attack1Behavior;
         this.attack2Behavior = attack2Behavior;
     }
-    public AttackBehavior getAttack1Behavior() {return attack1Behavior;}
-    public AttackBehavior getAttack2Behavior() {
-        return attack2Behavior;
-    }
 
     public void performAttack1(){
         attack1Behavior.attack();
@@ -29,7 +25,7 @@ public abstract class Equipment {
         return description;
     }
 
-    public abstract double cost();
+    public double cost(){return 0;}
 
     public void display(){
         System.out.println(getDescription()+" $"+cost());
